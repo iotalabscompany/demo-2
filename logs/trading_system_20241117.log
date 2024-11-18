@@ -1,0 +1,154 @@
+2024-11-17 16:12:49,721 - __main__ - INFO - Starting system training...
+2024-11-17 16:12:49,722 - __main__ - INFO - Fetching historical data...
+2024-11-17 16:12:49,722 - data.data_fetcher - INFO - Fetching all market data...
+2024-11-17 16:12:49,722 - data.data_fetcher - INFO - Fetching BTC-USD data for 1h timeframe...
+2024-11-17 16:12:50,784 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:12:50,784 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:12:49.722571 -> 2024-11-17 16:12:49.722571) (Yahoo error = "1h data not available for startTime=1668787969 and endTime=1731859969. The requested range must be within the last 730 days.")')
+2024-11-17 16:12:50,979 - data.data_fetcher - ERROR - Exchange API error: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:12:50,981 - data.data_fetcher - INFO - Fetching BTC-USD data for 4h timeframe...
+2024-11-17 16:12:51,645 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:12:51,646 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (4h 2022-11-18 16:12:50.981446 -> 2024-11-17 16:12:50.981446) (Yahoo error = "Invalid input - interval=4h is not supported. Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo]")')
+2024-11-17 16:12:51,661 - data.data_fetcher - ERROR - Exchange API error: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:12:51,663 - data.data_fetcher - INFO - Fetching BTC-USD data for 1d timeframe...
+2024-11-17 16:12:51,823 - data.data_fetcher - ERROR - Error calculating volume profile: Input array must be 1 dimensional
+2024-11-17 16:12:51,824 - data.data_fetcher - INFO - Fetching ETH-USD data for 1d timeframe...
+2024-11-17 16:12:51,825 - data.data_fetcher - INFO - Fetching ^GSPC data for 1d timeframe...
+2024-11-17 16:12:51,935 - data.data_fetcher - ERROR - Error calculating volume profile: Input array must be 1 dimensional
+2024-11-17 16:12:51,937 - data.data_fetcher - ERROR - Error calculating volume profile: Input array must be 1 dimensional
+2024-11-17 16:12:51,958 - data.data_fetcher - INFO - Fetching market sentiment data...
+2024-11-17 16:12:52,001 - data.data_fetcher - ERROR - Error adding microstructure metrics: Cannot set a DataFrame with multiple columns to the single column Liquidity
+2024-11-17 16:12:52,001 - __main__ - INFO - Engineering features...
+2024-11-17 16:12:52,001 - __main__ - ERROR - Error in system training: 'Close'
+2024-11-17 16:12:52,001 - root - ERROR - Error in main execution: 'Close'
+2024-11-17 16:16:47,962 - __main__ - INFO - Starting system training...
+2024-11-17 16:16:47,963 - __main__ - INFO - Fetching historical data...
+2024-11-17 16:16:47,963 - data.data_fetcher - INFO - Fetching all market data...
+2024-11-17 16:16:56,928 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:16:56,929 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:16:47.963650 -> 2024-11-17 16:16:47.963650) (Yahoo error = "1h data not available for startTime=1668788207 and endTime=1731860207. The requested range must be within the last 730 days.")')
+2024-11-17 16:17:02,272 - data.data_fetcher - ERROR - Error fetching from binance: binance does not have market symbol BTC-USD
+2024-11-17 16:17:04,231 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:17:04,232 - data.data_fetcher - INFO - Creating sample data for 1h
+2024-11-17 16:17:04,405 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:17:04,405 - yfinance - ERROR - ['BTC-USD']: ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+2024-11-17 16:17:04,420 - data.data_fetcher - ERROR - Error fetching from yfinance: "Column(s) ['Close', 'High', 'Low', 'Open', 'Volume'] do not exist"
+2024-11-17 16:17:04,420 - data.data_fetcher - ERROR - Error fetching from binance: binance does not have market symbol BTC-USD
+2024-11-17 16:17:04,421 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:17:04,421 - data.data_fetcher - INFO - Creating sample data for 4h
+2024-11-17 16:17:06,471 - __main__ - INFO - Engineering features...
+2024-11-17 16:17:06,493 - __main__ - ERROR - Error in system training: 'TradingConfig' object has no attribute 'MOVING_AVERAGES'
+2024-11-17 16:17:06,493 - root - ERROR - Error in main execution: 'TradingConfig' object has no attribute 'MOVING_AVERAGES'
+2024-11-17 16:18:11,512 - __main__ - INFO - Starting system training...
+2024-11-17 16:18:11,513 - __main__ - INFO - Fetching historical data...
+2024-11-17 16:18:11,513 - data.data_fetcher - INFO - Fetching all market data...
+2024-11-17 16:18:19,521 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:18:19,521 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:18:11.513391 -> 2024-11-17 16:18:11.513391) (Yahoo error = "1h data not available for startTime=1668788291 and endTime=1731860291. The requested range must be within the last 730 days.")')
+2024-11-17 16:18:24,935 - data.data_fetcher - ERROR - Error fetching from binance: binance does not have market symbol BTC-USD
+2024-11-17 16:18:26,658 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:18:26,658 - data.data_fetcher - INFO - Creating sample data for 1h
+2024-11-17 16:18:28,845 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:18:28,845 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:18:26.692373 -> 2024-11-17 16:18:26.692373) (Yahoo error = "1h data not available for startTime=1668788306 and endTime=1731860306. The requested range must be within the last 730 days.")')
+2024-11-17 16:18:28,859 - data.data_fetcher - ERROR - Error fetching from yfinance: "Column(s) ['Close', 'High', 'Low', 'Open', 'Volume'] do not exist"
+2024-11-17 16:18:28,860 - data.data_fetcher - ERROR - Error fetching from binance: binance does not have market symbol BTC-USD
+2024-11-17 16:18:28,860 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:18:28,860 - data.data_fetcher - INFO - Creating sample data for 4h
+2024-11-17 16:18:30,508 - __main__ - INFO - Engineering features...
+2024-11-17 16:21:37,082 - __main__ - ERROR - Error in system training: 'ETH_Returns'
+2024-11-17 16:21:37,083 - root - ERROR - Error in main execution: 'ETH_Returns'
+2024-11-17 16:25:45,086 - __main__ - INFO - Starting system training...
+2024-11-17 16:25:45,088 - __main__ - INFO - Fetching historical data...
+2024-11-17 16:25:45,088 - data.data_fetcher - INFO - Fetching all market data...
+2024-11-17 16:25:46,079 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:25:46,079 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:25:45.088492 -> 2024-11-17 16:25:45.088492) (Yahoo error = "1h data not available for startTime=1668788745 and endTime=1731860745. The requested range must be within the last 730 days.")')
+2024-11-17 16:25:46,248 - data.data_fetcher - ERROR - Error fetching from binance: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:25:47,470 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:25:47,471 - data.data_fetcher - INFO - Creating sample data for 1h
+2024-11-17 16:25:48,482 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:25:48,482 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:25:47.508076 -> 2024-11-17 16:25:47.508076) (Yahoo error = "1h data not available for startTime=1668788747 and endTime=1731860747. The requested range must be within the last 730 days.")')
+2024-11-17 16:25:48,493 - data.data_fetcher - ERROR - Error fetching from yfinance: "Column(s) ['Close', 'High', 'Low', 'Open', 'Volume'] do not exist"
+2024-11-17 16:25:48,519 - data.data_fetcher - ERROR - Error fetching from binance: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:25:48,519 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:25:48,520 - data.data_fetcher - INFO - Creating sample data for 4h
+2024-11-17 16:25:48,858 - __main__ - INFO - Engineering features...
+2024-11-17 16:25:49,035 - __main__ - INFO - Training model ensemble...
+2024-11-17 16:25:49,039 - __main__ - ERROR - Error in system training: "None of [Index([   0,    1,    2,    3,    4,    5,    6,    7,    8,    9,\n       ...\n       2910, 2911, 2912, 2913, 2914, 2915, 2916, 2917, 2918, 2919],\n      dtype='int64', length=2920)] are in the [columns]"
+2024-11-17 16:25:49,039 - root - ERROR - Error in main execution: "None of [Index([   0,    1,    2,    3,    4,    5,    6,    7,    8,    9,\n       ...\n       2910, 2911, 2912, 2913, 2914, 2915, 2916, 2917, 2918, 2919],\n      dtype='int64', length=2920)] are in the [columns]"
+2024-11-17 16:36:34,736 - __main__ - INFO - Starting system training...
+2024-11-17 16:36:34,738 - __main__ - INFO - Fetching historical data...
+2024-11-17 16:36:34,738 - data.data_fetcher - INFO - Fetching all market data...
+2024-11-17 16:36:35,776 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:36:35,776 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:36:34.738826 -> 2024-11-17 16:36:34.738826) (Yahoo error = "1h data not available for startTime=1668789394 and endTime=1731861394. The requested range must be within the last 730 days.")')
+2024-11-17 16:36:35,890 - data.data_fetcher - ERROR - Error fetching from binance: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:36:37,205 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:36:37,206 - data.data_fetcher - INFO - Creating sample data for 1h
+2024-11-17 16:36:38,008 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:36:38,008 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:36:37.235709 -> 2024-11-17 16:36:37.235709) (Yahoo error = "1h data not available for startTime=1668789397 and endTime=1731861397. The requested range must be within the last 730 days.")')
+2024-11-17 16:36:38,017 - data.data_fetcher - ERROR - Error fetching from yfinance: "Column(s) ['Close', 'High', 'Low', 'Open', 'Volume'] do not exist"
+2024-11-17 16:36:38,027 - data.data_fetcher - ERROR - Error fetching from binance: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:36:38,027 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:36:38,028 - data.data_fetcher - INFO - Creating sample data for 4h
+2024-11-17 16:36:38,341 - __main__ - INFO - Engineering features...
+2024-11-17 16:36:38,474 - __main__ - INFO - Training model ensemble...
+2024-11-17 16:36:38,474 - models.model_trainer - INFO - Starting model training...
+2024-11-17 16:36:38,478 - models.model_trainer - INFO - 
+Training rf model...
+2024-11-17 16:36:38,480 - models.model_trainer - ERROR - Error in model training: 'NoneType' object is not subscriptable
+2024-11-17 16:36:38,480 - __main__ - ERROR - Error in system training: 'NoneType' object is not subscriptable
+2024-11-17 16:36:38,480 - root - ERROR - Error in main execution: 'NoneType' object is not subscriptable
+2024-11-17 16:37:48,382 - __main__ - INFO - Starting system training...
+2024-11-17 16:37:48,383 - __main__ - INFO - Fetching historical data...
+2024-11-17 16:37:48,383 - data.data_fetcher - INFO - Fetching all market data...
+2024-11-17 16:37:49,279 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:37:49,280 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:37:48.383458 -> 2024-11-17 16:37:48.383458) (Yahoo error = "1h data not available for startTime=1668789468 and endTime=1731861468. The requested range must be within the last 730 days.")')
+2024-11-17 16:37:49,362 - data.data_fetcher - ERROR - Error fetching from binance: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:37:50,539 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:37:50,540 - data.data_fetcher - INFO - Creating sample data for 1h
+2024-11-17 16:37:51,226 - yfinance - ERROR - 
+1 Failed download:
+2024-11-17 16:37:51,227 - yfinance - ERROR - ['BTC-USD']: YFPricesMissingError('$%ticker%: possibly delisted; no price data found  (1h 2022-11-18 16:37:50.566064 -> 2024-11-17 16:37:50.566064) (Yahoo error = "1h data not available for startTime=1668789470 and endTime=1731861470. The requested range must be within the last 730 days.")')
+2024-11-17 16:37:51,238 - data.data_fetcher - ERROR - Error fetching from yfinance: "Column(s) ['Close', 'High', 'Low', 'Open', 'Volume'] do not exist"
+2024-11-17 16:37:51,250 - data.data_fetcher - ERROR - Error fetching from binance: binance GET https://api.binance.com/api/v3/exchangeInfo 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}
+2024-11-17 16:37:51,251 - data.data_fetcher - ERROR - Error fetching from kraken: kraken does not have market symbol BTC-USD
+2024-11-17 16:37:51,251 - data.data_fetcher - INFO - Creating sample data for 4h
+2024-11-17 16:37:51,603 - __main__ - INFO - Engineering features...
+2024-11-17 16:37:51,742 - __main__ - INFO - Training model ensemble...
+2024-11-17 16:37:51,742 - models.model_trainer - INFO - Starting model training...
+2024-11-17 16:37:51,747 - models.model_trainer - INFO - 
+Training rf model...
+2024-11-17 16:37:51,749 - models.model_trainer - ERROR - Error in model training: 'NoneType' object is not subscriptable
+2024-11-17 16:37:51,749 - __main__ - ERROR - Error in system training: 'NoneType' object is not subscriptable
+2024-11-17 16:37:51,749 - root - ERROR - Error in main execution: 'NoneType' object is not subscriptable
